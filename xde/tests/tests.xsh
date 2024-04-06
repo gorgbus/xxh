@@ -253,7 +253,7 @@ if __name__ == '__main__':
                 check(
                     'Test xontrib',
                     $(echo @(xxh) @(h['xxh_auth']) @(server) @(xxh_args) +iff +hf /xxh/xde/tests/xonsh/test_xontrib.xsh ),
-                    "autojump  installed      loaded\nschedule  installed      loaded"
+                    "sh clp"
                 )
 
                 check(
