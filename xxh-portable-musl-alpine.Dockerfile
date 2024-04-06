@@ -30,7 +30,7 @@ RUN nuitka3 --python-flag=no_site --python-flag=no_warnings --show-progress --st
 RUN ls -la
 
 WORKDIR xxh.dist
-RUN ./xxh -V
-RUN cp xxh /xxh/xxh/xxh_xxh/xxh.*sh /xxh/xxh/xxh_xxh/*.xxhc  /package
+RUN ./xxh.bin -V
+RUN cp xxh.bin /package/xxh && cp /xxh/xxh/xxh_xxh/xxh.*sh /xxh/xxh/xxh_xxh/*.xxhc /package
 WORKDIR /package
 CMD tar -zcf /result/xxh-portable-musl-alpine-`uname`-`uname -m`.tar.gz * && ls -sh1 /result
