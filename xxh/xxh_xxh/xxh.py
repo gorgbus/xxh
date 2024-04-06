@@ -42,7 +42,7 @@ class xxh:
         self.supported_source_types = ['git', 'path']
         self.supported_xxh_packages_regex = '|'.join(self.supported_xxh_packages)
         self.supported_source_types_regex = '|'.join(self.supported_source_types)
-        self.package_name_regex = f'xxh\-({self.supported_xxh_packages_regex})-[a-zA-Z0-9_-]+'
+        self.package_name_regex = rf'xxh\-({self.supported_xxh_packages_regex})-[a-zA-Z0-9_-]+'
         self.destination_exists = False
         self.local = False
 
@@ -437,7 +437,7 @@ class xxh:
         package_source_type='git'
         package_source=f'https://github.com/xxh/{package_name}'
 
-        g = re.match(f'^({self.package_name_regex})\+({self.supported_source_types_regex})\+(.+)$', package_name)
+        g = re.match(rf'^({self.package_name_regex})\+({self.supported_source_types_regex})\+(.+)$', package_name)
         if g:
             package_name = g.group(1)
             package_source_type = g.group(3)
