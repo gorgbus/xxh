@@ -1,4 +1,5 @@
 docker-compose
+docker==6.1.3  # https://stackoverflow.com/questions/77641240/getting-docker-compose-typeerror-kwargs-from-env-got-an-unexpected-keyword-ar
 argparse
 pyyaml
 setuptools
