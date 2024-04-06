@@ -223,7 +223,7 @@ if __name__ == '__main__':
                 check(
                     'Test python',
                     $(echo @(xxh) @(h['xxh_auth']) @(server) @(xxh_args) +hf /xxh/xde/tests/xonsh/test_python.xsh ),
-                    "Python 3.8"
+                    "Python 3.1"
                 )
 
                 check(
