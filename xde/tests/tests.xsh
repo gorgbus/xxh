@@ -211,7 +211,7 @@ if __name__ == '__main__':
                 check(
                     'Test install xxh',
                     $(echo @(xxh) @(h['xxh_auth']) @(server) @(xxh_args) +iff +s @(shell) +hf /xxh/xde/tests/xonsh/test_env.py ),
-                    "{{'XXH_HOME': '{host_home}/.xxh/.xxh/shells/xxh-shell-xonsh/build/../../../..', 'PYTHONPATH': '{host_home}/.xxh/.xxh/shells/xxh-shell-xonsh/build/../../../../.local/lib/python3.8/site-packages'}}".format(host_home=host_home)
+                    "{{'XXH_HOME': '{host_home}/.xxh/.xxh/shells/xxh-shell-xonsh/build/../../../..', 'PYTHONPATH': '{host_home}/.xxh/.xxh/shells/xxh-shell-xonsh/build/../../../../.local/lib/python3.11/site-packages'}}".format(host_home=host_home)
                 )
 
                 # check(
@@ -223,7 +223,7 @@ if __name__ == '__main__':
                 check(
                     'Test python',
                     $(echo @(xxh) @(h['xxh_auth']) @(server) @(xxh_args) +hf /xxh/xde/tests/xonsh/test_python.xsh ),
-                    "Python 3.8"
+                    "Python 3.1"
                 )
 
                 check(
@@ -253,7 +253,7 @@ if __name__ == '__main__':
                 check(
                     'Test xontrib',
                     $(echo @(xxh) @(h['xxh_auth']) @(server) @(xxh_args) +iff +hf /xxh/xde/tests/xonsh/test_xontrib.xsh ),
-                    "autojump  installed      loaded\nschedule  installed      loaded"
+                    "sh clp autojump"
                 )
 
                 check(
