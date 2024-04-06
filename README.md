@@ -27,7 +27,8 @@ If you like the idea of xxh click ⭐ on the repo and <a href="https://twitter.c
 ## Installation methods
 #### [PyPi 3](https://pypi.org/project/xxh-xxh/) 
 ```shell script
-pip3 install xxh-xxh
+pip install xxh-xxh
+# OR from repo: pip install git+https://github.com/xxh/xxh
 ```
 
 #### [pipx](https://pipxproject.github.io/pipx/) - good alternative to brew and pip, read [comparison](https://pipxproject.github.io/pipx/comparisons/)
