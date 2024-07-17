@@ -21,7 +21,7 @@ class xxh:
         self.scp_command = 'scp'
         self.local_xxh_home = p('~/.xxh')
         self.config_file = self.get_config_filepath()
-        self.host_xxh_home = '~/.xxh'
+        self.host_xxh_home = '~/.xxh-custom'
         self.shell = self.get_current_shell()
         self.short_shell_name = self.shell.split('-')[2]
         self.build_file_exts = ['xsh', 'zsh', 'fish', 'sh']
